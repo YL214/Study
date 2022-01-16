@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+	int a, b, c, flag;
+	for (a = 1; a < 100; a++)
+	{
+		for (b = 1; b <= a; b++)
+		{
+			c = a % b;
+			if (c == 0)
+			{
+				flag++;
+			}
+		}
+		if (flag == 2)
+		{
+			printf("%d\n", a);
+				flag = 0;
+		}
+		else flag = 0;
+	}
+	return 0;
+};
